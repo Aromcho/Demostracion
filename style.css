@@ -1,4 +1,5 @@
 body {
+    max-width: 1440px;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 90vh;
+    height: 90%;
     padding: 0 20px;
 }
 
@@ -107,7 +108,7 @@ header {
 .css-cont {
     padding: 5%;
     box-shadow:0 0 15px cyan ;
-    width: 40vw;
+    width: 70vw;
     height:40vh;
 }
 /* js */
@@ -123,7 +124,7 @@ header {
 .js-cont {
     padding: 5%;
     box-shadow:0 0 15px cyan ;
-    width: 40vw;
+    width: 70vw;
     height:40vh;
 }
 /* react */
@@ -136,7 +137,9 @@ header {
 
 }
 .react-cont {
-    width: 40vw;
+    padding: 5%;
+    box-shadow:0 0 15px cyan ;
+    width: 70vw;
     height:40vh;
 }
 /* python */
@@ -149,9 +152,54 @@ header {
 
 }
 .python-cont {
-    width: 40vw;
+    width: 70vw;
     height:40vh;
 }
+/* python */
+.python {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.python-cont {
+    padding: 5%;
+    box-shadow: 0 0 15px cyan;
+    width: 70vw;
+    height: 40vh;
+}
+
+/* php */
+.php {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.php-cont {
+    padding: 5%;
+    box-shadow: 0 0 15px cyan;
+    width: 70vw;
+    height: 40vh;
+}
+
+/* c+ */
+.c {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-cont {
+    padding: 5%;
+    box-shadow: 0 0 15px cyan;
+    width: 70vw;
+    height: 40vh;
+}
+
 
 @keyframes gradientAnimation {
     0% {
