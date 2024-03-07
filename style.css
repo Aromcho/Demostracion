@@ -1,12 +1,17 @@
 body {
-    background-color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(200deg,  cyan,#333, #2c2c2c); /* Define el gradiente inicial */
+    background-size: 600% 600%; /* Tamaño del gradiente */
+    animation: gradientAnimation 30s infinite; /* Define la animación */
 }
 
+
+
+
 nav {
-    background-color: #333;
+    background-color: #2c2c2c;
     padding: 10px 0;
 }
 
@@ -42,21 +47,123 @@ header {
 
 
 .lenguajes img {
-    width: 8vw;
+    padding: 10px;
+    width: 6vw;
     margin-top: 20px;
     opacity: 0;
     animation: slideLeft 1s forwards;
+    box-shadow: 0 0 15px cyan; 
+    border-radius: 50%; 
+    transition: .5s;
     
 }
+
+.lenguajes img:hover {
+    width: 7vw;
+    box-shadow: 0 0 20px cyan; 
+    
+}
+    
+
 .l1 {
     
 }
+
 
 .miCara img {
     width: 40vw;
     border-radius: 50%;
 }
 
+
+
+
+
+/* HTML */
+.html {
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.html-cont {
+    padding: 5%;
+    box-shadow:0 0 15px cyan ;
+    width: 70vw;
+    height:40vh;
+}
+/* css */
+.css {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.css-cont {
+    padding: 5%;
+    box-shadow:0 0 15px cyan ;
+    width: 40vw;
+    height:40vh;
+}
+/* js */
+.js {
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.js-cont {
+    padding: 5%;
+    box-shadow:0 0 15px cyan ;
+    width: 40vw;
+    height:40vh;
+}
+/* react */
+.react {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.react-cont {
+    width: 40vw;
+    height:40vh;
+}
+/* python */
+.python {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.python-cont {
+    width: 40vw;
+    height:40vh;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
 @keyframes slideLeft {
     0% {
         transform: translateX(100%);
@@ -74,7 +181,7 @@ header {
         opacity: 0;
     }
     100% {
-        transform: translateX(-7vw) ;
+        transform: translateX(-10vw) ;
         opacity: 1;
     }
 }
@@ -114,7 +221,7 @@ header {
         opacity: 0;
     }
     100% {
-        transform: translateX(-7vw) ;
+        transform: translateX(-10vw) ;
         opacity: 1;
     }
 }
